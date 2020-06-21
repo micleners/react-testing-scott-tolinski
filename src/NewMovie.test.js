@@ -3,8 +3,8 @@ import { render, cleanup, fireEvent } from '@testing-library/react';
 import NewMovie from './NewMovie';
 
 describe('<NewMovie /> button', () => {
-  let wrapper;
-  let debug;
+  let wrapper = render(<NewMovie />);
+  let debug = wrapper.debug;
 
   beforeEach(() => {
     wrapper = render(<NewMovie />);
