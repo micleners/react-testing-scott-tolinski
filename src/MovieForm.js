@@ -3,11 +3,9 @@ import React, { Component } from 'react';
 export default class MovieForm extends Component {
   render() {
     return (
-      <form>
+      <form data-testid="movie-form">
         <input type="text" />
-        <button type="button">
-Submit
-        </button>
+        <button type="button">Submit</button>
       </form>
     );
   }

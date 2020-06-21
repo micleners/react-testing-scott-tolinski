@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import MovieFrom from './MovieFrom';
+import MovieForm from './MovieForm';
 
 class NewMovie extends Component {
   render() {
     return (
       <div>
-        <MovieFrom />
+        <h1 data-testid="page-title">New Movie</h1>
+        <MovieForm />
       </div>
     );
   }

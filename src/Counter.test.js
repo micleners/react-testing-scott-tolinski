@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, cleanup, fireEvent } from 'react-testing-library';
+import { render, cleanup, fireEvent } from '@testing-library/react';
 import Counter from './Counter';
 
 describe('<Counter /> button', () => {
@@ -10,7 +10,7 @@ describe('<Counter /> button', () => {
   beforeEach(() => {
     wrapper = render(<Counter />);
     counterButton = wrapper.getByTestId('counter-button');
-    debug = wrapper.getByTestId('counter-button');
+    debug = wrapper.debug;
   });
 
   afterEach(cleanup);
